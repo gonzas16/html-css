@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    background-color:rgba(32,33,36,1);
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Header*/
+.cabecera{
+    height: 80px;
+}
+
+.container-list ol{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.container-list ol li{
+    /*El primer numero es de arriba y abajo*/
+    /*El segundo numero es de los costados*/
+    padding: 23px 10px;
+    /*Esto le quita el punto o la numeracion a la lista*/
+    list-style: none;
+    font-size: 1.4rem;
+    color: white
+}
+.container-list ol li img {
+    height: 20px;
+}
+/*Header*/
+
+main{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 71vh;
+}
+
+.container-logo img {
+    height: 102px;
+}
+
+input {
+    height: 3.5rem;
+    width: 100%;
+    border-radius: 3rem;
+    margin: 2.5rem; 
+    max-width: 575px;
+    padding: 1rem;
+    background-color: white;
+}
+
+
+.container-btn {
+    width: 504px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*siempre que llamamos una clase le ponemos el . adelante*/
+.container-btn .btn {
+padding: 10px;
+font-size: 1.6rem;
+}
+
+/*Footer*/
+
+footer{
+ background-color: #171717;   
+}
+
+.container-p{
+    font-size: 1.5rem;
+    color: white;
+    padding: 15px 5px;
+    border-bottom: solid 2px white;
+}
+
+.container-list-footer {
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+
+}
+
+.container-list-footer li {
+    list-style: none;
+    font-size: 1.4rem;
+    color: white;
+    padding-right: 10px;
+}
+
+.container-list-footer ol{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-list-footer .list-left{
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+}
+
+.container-list-footer .list-right{
+    display: flex;
+    align-items: center;
+}
+
+/*MEDIA QUERIES*/
+@media (min-width: 480px) {
+    input {
+        width: 80%;
+    }
+    .container-btn{
+        width: 480px;
+    }
+    .container-p{
+        text-align: center;
+    }
+    .container-list-footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+        
